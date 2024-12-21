@@ -14,7 +14,7 @@ Este repositório tem como objetivo implementar manualmente os principais algori
 
 ### Classificação
 
-- Regressão logística
+- Regressão logística ✔
 - KNN
 - SVM
 - Random Forest
@@ -25,9 +25,14 @@ Este repositório tem como objetivo implementar manualmente os principais algori
 .
 ├── README.md
 ├── imagens
-│   └── LinearReg.png
-├── src
-│   ├── main_linear_reg.py
-│   └── models
-│       ├── RegLinear.py
+│   ├── LinearReg.png
+│   └── LogisticReg.png
+└── src
+    ├── main_linear_reg.py
+    ├── main_logistic_reg.py
+    └── models
+        ├── RegLinear.py
+        ├── RegLogistic.py
+        ├── __init__.py
+
 ```
