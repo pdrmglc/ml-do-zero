@@ -24,8 +24,10 @@ Este repositório tem como objetivo implementar manualmente os principais algori
 ```bash
 .
 ├── README.md
-├── RegLinear.py
 ├── imagens
-│   └── LinearReg.png
-└── main_linear_reg.py
+│   └── LinearReg.png
+├── src
+│   ├── main_linear_reg.py
+│   └── models
+│       ├── RegLinear.py
 ```
