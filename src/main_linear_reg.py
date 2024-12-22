@@ -10,10 +10,10 @@ import numpy as np
 model = CustomLinearRegression()
 sk_model = LinearRegression()
 
-# %% Gerando dados sintéticos
+# %% Gerando dados sintéticos (coef = 3, intercept = 2)
 
-X = np.random.rand(100, 1) *10
-y = 3 * X.squeeze() + 2 + np.random.randn(100) * 3
+X = np.random.rand(1000, 1) *10
+y = 3 * X.squeeze() + 2 + np.random.randn(1000) * 3
 
 # %% Ajustando os modelos
 
@@ -23,5 +23,7 @@ sk_model.fit(X, y)
 # %% Identificando os coeficientes
 
 print(model.intercept, model.coefficients)
-print(sk_model.intercept_, sk_model.coef_)
+# >>> Intercept: 1.9125981074452572; coeficientes: [3.00583086]
 
+print(sk_model.intercept_, sk_model.coef_)
+# >>> Intercept: 1.9125981074452874; coeficientes: [3.00583086]

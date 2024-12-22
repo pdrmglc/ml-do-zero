@@ -9,6 +9,7 @@ Este repositório tem como objetivo implementar manualmente os principais algori
 - Regressão linear ✔
 - KNN
 - SVM
+- Árvore de decisão
 - Random Forest
 - Gradient Boosting
 
@@ -17,6 +18,7 @@ Este repositório tem como objetivo implementar manualmente os principais algori
 - Regressão logística ✔
 - KNN
 - SVM
+- Árvore de decisão
 - Random Forest
 - Gradient Boosting
 
