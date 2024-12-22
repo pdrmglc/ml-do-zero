@@ -2,18 +2,18 @@
 
 from models.RegLinear import CustomLinearRegression
 from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_squared_error, r2_score
 import numpy as np
 
-# %% Criando instâncias dos modelos
-
-model = CustomLinearRegression()
-sk_model = LinearRegression()
 
 # %% Gerando dados sintéticos (coef = 3, intercept = 2)
 
 X = np.random.rand(1000, 1) *10
 y = 3 * X.squeeze() + 2 + np.random.randn(1000) * 3
+
+# %% Criando instâncias dos modelos
+
+model = CustomLinearRegression()
+sk_model = LinearRegression()
 
 # %% Ajustando os modelos
 
