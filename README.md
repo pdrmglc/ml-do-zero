@@ -28,13 +28,18 @@ Este repositório tem como objetivo implementar manualmente os principais algori
 ├── README.md
 ├── imagens
 │   ├── LinearReg.png
-│   └── LogisticReg.png
+│   ├── LogisticReg.png
+│   ├── LogisticRegConfusionMatrixCustom.png
+│   └── LogisticRegConfusionMatrixSklearn.png
 └── src
+    ├── functions
+    │   ├── __init__.py
+    │   └── confusionMatrix.py
     ├── main_linear_reg.py
     ├── main_logistic_reg.py
     └── models
         ├── RegLinear.py
         ├── RegLogistic.py
-        ├── __init__.py
+        └── __init__.py
 
 ```
