@@ -2,6 +2,9 @@
 
 from models.RegLogistic import CustomLogisticRegression
 from sklearn.linear_model import LogisticRegression
+from sklearn.datasets import load_breast_cancer
+from sklearn.model_selection import train_test_split
+from functions.confusionMatrix import plotMatrix
 import numpy as np
 
 # %% Criando instâncias dos modelos
@@ -9,15 +12,34 @@ import numpy as np
 model = CustomLogisticRegression(learning_rate=0.1, max_iter=1000)
 sk_model = LogisticRegression()
 
-# %% Gerando dados simples
+# %% Baixando dados
 
-X = np.array([[2], [3], [5], [7], [8]])
-y = np.array([0, 0, 1, 1, 1])
+# Carrega o dataset
+cancer = load_breast_cancer()
+
+# Exibe as features e os targets
+X = cancer.data  # Matriz de features
+y = cancer.target  # Vetor de target
+
+# %% Separando dados em treino e teste
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, random_state=0, test_size=0.20)
 
 # %% Ajustando os modelos
 
 model.fit(X, y)
 sk_model.fit(X, y)
+
+y_pred_custom = model.predict(X_test)
+y_pred_sklearn = sk_model.predict(X_test)
+
+# %% Avaliação dos modelos
+
+labels = ['Tumor maligno', 'Tumor benigno']
+
+plotMatrix(y_test, y_pred_custom, labels, figName = "LogisticRegConfusionMatrixCustom", title="Custom")
+plotMatrix(y_test, y_pred_sklearn, labels, figName = "LogisticRegConfusionMatrixSklearn", title="Sklearn")
 
 # %% Identificando os coeficientes
 
