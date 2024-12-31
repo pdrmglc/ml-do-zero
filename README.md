@@ -7,7 +7,7 @@ Este repositório tem como objetivo implementar manualmente os principais algori
 ### Regressão
 
 - Regressão linear ✔
-- KNN
+- KNN ✔
 - SVM
 - Árvore de decisão
 - Random Forest
@@ -28,8 +28,13 @@ Este repositório tem como objetivo implementar manualmente os principais algori
 ├── README.md
 ├── imgs
 │   ├── KNNCLF.png
+│   ├── KNNCLFCLASS.png
 │   ├── KNNCLFConfusionMatrixCustom.png
 │   ├── KNNCLFConfusionMatrixSklearn.png
+│   ├── KNNREG.png
+│   ├── KNNREGCLASS.png
+│   ├── KNNREGMetricsCustom.png
+│   ├── KNNREGMetricsSklearn.png
 │   ├── LinearReg.png
 │   ├── LogisticReg.png
 │   ├── LogisticRegConfusionMatrixCustom.png
@@ -37,8 +42,10 @@ Este repositório tem como objetivo implementar manualmente os principais algori
 └── src
     ├── functions
     │   ├── __init__.py
-    │   └── confusionMatrix.py
+    │   ├── confusionMatrix.py
+    │   └── metrics.py
     ├── main_knn_clf.py
+    ├── main_knn_reg.py
     ├── main_linear_reg.py
     ├── main_logistic_reg.py
     └── models
@@ -46,5 +53,4 @@ Este repositório tem como objetivo implementar manualmente os principais algori
         ├── RegLogistic.py
         ├── __init__.py
         └── knn.py
-
 ```

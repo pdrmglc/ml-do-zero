@@ -11,14 +11,15 @@ from functions.confusionMatrix import plotMatrix
 iris = load_iris()
 X, y = iris.data, iris.target
 
-# %%
-# Normalização dos dados
-scaler = StandardScaler()
-X = scaler.fit_transform(X)
-
 # %% Separando dados em treino e teste
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2,
                                                     random_state=0)
+
+# %%
+# Normalização dos dados
+scaler = StandardScaler()
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
 
 # %% Criando instâncias dos modelos
 knn_custom = CustomCLFKNN(k=5)
