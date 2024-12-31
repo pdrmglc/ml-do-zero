@@ -21,7 +21,7 @@ def plotMatrix(y_test, y_pred, labels, figName = "ConfusionMatrix", title=""):
             color="black"
           plt.text(j + 0.5, i + 0.5, f"{conf_matrix_percent[i, j]:.2%}\n({conf_matrix[i, j]})", ha="center", va="center", color=color)
   plt.title(title)
-  plt.xlabel('Predicted Values')
-  plt.ylabel('Real Values')
+  plt.xlabel('Valores Preditos')
+  plt.ylabel('Valores Reais')
   plt.savefig(f'{figName}.png', dpi=300)
   plt.show()

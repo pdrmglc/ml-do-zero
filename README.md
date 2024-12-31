@@ -16,7 +16,7 @@ Este repositório tem como objetivo implementar manualmente os principais algori
 ### Classificação
 
 - Regressão logística ✔
-- KNN
+- KNN ✔
 - SVM
 - Árvore de decisão
 - Random Forest
@@ -26,7 +26,10 @@ Este repositório tem como objetivo implementar manualmente os principais algori
 ```bash
 .
 ├── README.md
-├── imagens
+├── imgs
+│   ├── KNNCLF.png
+│   ├── KNNCLFConfusionMatrixCustom.png
+│   ├── KNNCLFConfusionMatrixSklearn.png
 │   ├── LinearReg.png
 │   ├── LogisticReg.png
 │   ├── LogisticRegConfusionMatrixCustom.png
@@ -35,11 +38,13 @@ Este repositório tem como objetivo implementar manualmente os principais algori
     ├── functions
     │   ├── __init__.py
     │   └── confusionMatrix.py
+    ├── main_knn_clf.py
     ├── main_linear_reg.py
     ├── main_logistic_reg.py
     └── models
         ├── RegLinear.py
         ├── RegLogistic.py
-        └── __init__.py
+        ├── __init__.py
+        └── knn.py
 
 ```

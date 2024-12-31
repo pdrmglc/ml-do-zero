@@ -5,7 +5,6 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.datasets import load_breast_cancer
 from sklearn.model_selection import train_test_split
 from functions.confusionMatrix import plotMatrix
-import numpy as np
 
 # %% Criando instâncias dos modelos
 
@@ -38,8 +37,8 @@ y_pred_sklearn = sk_model.predict(X_test)
 
 labels = ['Tumor maligno', 'Tumor benigno']
 
-plotMatrix(y_test, y_pred_custom, labels, figName = "LogisticRegConfusionMatrixCustom", title="Custom")
-plotMatrix(y_test, y_pred_sklearn, labels, figName = "LogisticRegConfusionMatrixSklearn", title="Sklearn")
+plotMatrix(y_test, y_pred_custom, labels, figName = "../imgs/LogisticRegConfusionMatrixCustom", title="Custom")
+plotMatrix(y_test, y_pred_sklearn, labels, figName = "../imgs/LogisticRegConfusionMatrixSklearn", title="Sklearn")
 
 # %% Identificando os coeficientes
 
