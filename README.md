@@ -20,7 +20,7 @@ Este repositório tem como objetivo implementar manualmente os principais algori
 - SVM
 - Árvore de decisão
 - Random Forest
-- Gradient Boosting
+- Gradient Boosting ✔
 
 ## Estrutura do repositório
 ```bash
@@ -44,11 +44,13 @@ Este repositório tem como objetivo implementar manualmente os principais algori
     │   ├── __init__.py
     │   ├── confusionMatrix.py
     │   └── metrics.py
+    ├── main_boosting.py
     ├── main_knn_clf.py
     ├── main_knn_reg.py
     ├── main_linear_reg.py
     ├── main_logistic_reg.py
     └── models
+        ├── Boosting.py
         ├── RegLinear.py
         ├── RegLogistic.py
         ├── __init__.py
